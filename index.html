@@ -11,11 +11,10 @@
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
-
   </head>
   <body>
     <header class="navbar">
-      <h3 class="logo">Thanawut</h3>
+      <h3 class="logo">Thanawut<span class="star"></span></h3>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="hamburger">
         <span></span>
@@ -40,7 +39,9 @@
       <div class="hero-right">
         <h2>Hi,</h2>
         <h1>I'm <span>Thanawut</span></h1>
-        <h3>Game Devoloper</h3>
+        <h3 class="job">
+          <span id="job-text" class="animate">Game Developer</span>
+        </h3>
         <button>
           <a href="#contact" style="text-decoration: none; color: white"
             >Contact</a
@@ -61,10 +62,16 @@
         <img src="Image/myself2.jpg" alt="" />
         <div>
           <h3>I'm Thanawut</h3>
+          <br />
           <p>
             My name is Thanawut, and my nickname is Baw. I am a responsible
             person and always willing to help others. I am interested in
-            technology and enjoy exercising.
+            technology and enjoy exercising I am currently studying at Prince of
+            Songkla University, Surat Thani Campus, in the Faculty of Science
+            and Industrial Technology, majoring in Information Technology. I am
+            a second-year student. I usually manage my time effectively between
+            studying, exercising, resting, and doing activities, which makes me
+            rarely feel bored each day.
           </p>
         </div>
       </div>
@@ -130,18 +137,29 @@
       </div>
     </section>
 
-    <section id="work" class="work">
-      <h2 class="section-title">Work</h2>
+<section id="work" class="work">
+  <h2 class="section-title">Work</h2>
 
-      <div class="work-grid">
-        <img src="Image/workpic7.png" />
-        <img src="Image/workpic5.png" />
-        <img src="Image/workpic4.png" />
-        <img src="Image/workpic3.png" />
-        <img src="Image/workpic2.png" />
-        <img src="Image/workpic1.png" />
-      </div>
-    </section>
+  <div class="carousel">
+    <button class="nav prev">‹</button>
+
+    <div class="work-track">
+      <img src="Image/workpic7.png" />
+      <img src="Image/workpic5.png" />
+      <img src="Image/workpic4.png" />
+      <img src="Image/workpic3.png" />
+      <img src="Image/workpic2.png" />
+      <img src="Image/workpic1.png" />
+    </div>
+
+    <button class="nav next">›</button>
+  </div>
+</section>
+
+<div class="modal" id="workModal">
+  <span class="close">×</span>
+  <img id="modalImg" />
+</div>
 
     <section id="contact" class="contact">
       <h2 class="section-title">Contact</h2>
