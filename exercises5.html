@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercises5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h3 class="logo">Thanawut</h3>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="exercises.html"class="active">Exercises</a><a href="exercises.html">Exercises</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <br />
+    <br />
+    <div class="container">
+      <h1 class="title">Exercises5</h1>
+      <h3 class="titleh1">สร้างแบบฟอร์มลงทะเบียนกิจกรรม</h3>
+
+      <section id="about" class="about">
+        <div class="about-content">
+          <img src="Image/Picresult5.png" alt="" />
+          <div>
+            <p>
+              คุณได้รับมอบหมายให้สร้างหน้าเว็บ HTML
+              สำหรับแบบฟอร์มลงทะเบียนกิจกรรม ผู้ใช้ควรจะสามารถกรอกข้อมูลส่วนตัว
+              เลือกประเภทตั๋ว และให้ข้อเสนอแนะเพิ่มเติมได้ แบบฟอร์มควรใช้ HTML
+              เชิงความหมาย และสามารถเข้าถึงได้ (accessible)
+              เพื่อประสบการณ์ผู้ใช้ที่ดี สิ่งที่โจทย์ต้องการ: ใช้แท็ก
+              &lt;form&gt; ที่มี action และ method ที่เหมาะสม
+              สร้างช่องกรอกข้อมูลส่วนตัวสำหรับ ชื่อ-นามสกุล, อีเมล
+              และเบอร์โทรศัพท์ โดยใช้ &lt;label&gt; และ &lt;input
+              type="text"&gt;, &lt;input type="email"&gt;, &lt;input
+              type="tel"&gt; ตามลำดับ กำหนดให้ช่อง ชื่อ-นามสกุล และ อีเมล
+              เป็นช่องที่ต้องกรอก (required) ใช้ &lt;fieldset&gt; และ
+              &lt;legend&gt; เพื่อจัดกลุ่มข้อมูลส่วนตัว
+              สร้างส่วนสำหรับเลือกประเภทตั๋ว โดยใช้ &lt;fieldset&gt; และ
+              &lt;legend&gt; แยกต่างหาก ในส่วนเลือกประเภทตั๋ว ให้ใช้ &lt;input
+              type="radio"&gt; อย่างน้อย 3 ตัวเลือก เช่น ตั๋วทั่วไป, ตั๋ว VIP,
+              ตั๋วนักเรียน แต่ละตัวเลือกควรมี &lt;label&gt; ของตัวเอง
+              เพิ่มช่องทำเครื่องหมาย สำหรับ “ต้องการรับข่าวสาร” โดยใช้ &lt;input
+              type="checkbox"&gt; และ &lt;label&gt; เพิ่มช่องข้อความขนาดใหญ่
+              สำหรับ “ข้อเสนอแนะเพิ่มเติม” โดยใช้ &lt;textarea&gt; พร้อม
+              &lt;label&gt; เพิ่มปุ่มส่งฟอร์ม โดยใช้ปุ่ม submit และมีข้อความว่า
+              “ลงทะเบียน”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <a class="btn result" href="Resultexercises/Result5.html">ผลลัพธ์</a>
+        <button class="btn code">ดู Code</button>
+      </div>
+    </div>
+  </body>
+</html>

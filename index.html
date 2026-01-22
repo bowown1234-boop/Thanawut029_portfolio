@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thanawut | Web Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+
+  </head>
+  <body>
+    <header class="navbar">
+      <h3 class="logo">Thanawut</h3>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="exercises.html">Exercises</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <br />
+      <div class="hero-left"></div>
+
+      <div class="hero-right">
+        <h2>Hi,</h2>
+        <h1>I'm <span>Thanawut</span></h1>
+        <h3>Game Devoloper</h3>
+        <button>
+          <a href="#contact" style="text-decoration: none; color: white"
+            >Contact</a
+          >
+        </button>
+      </div>
+
+      <div class="hero-img">
+        <img src="Image/myself1.jpg" alt="profile" />
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <br />
+      <br />
+      <div class="about-content">
+        <img src="Image/myself2.jpg" alt="" />
+        <div>
+          <h3>I'm Thanawut</h3>
+          <p>
+            My name is Thanawut, and my nickname is Baw. I am a responsible
+            person and always willing to help others. I am interested in
+            technology and enjoy exercising.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-content">
+          <h3>Professional Skills</h3>
+          <p>
+            These are the technologies and tools I use to develop websites and
+            games.
+          </p>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>HTML5</span>
+              <span>95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress html"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>CSS3</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress css"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>JavaScript</span>
+              <span>65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress js"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-title">
+              <span>UX / UI</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress ui"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-image">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+            alt="coding"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h2 class="section-title">Work</h2>
+
+      <div class="work-grid">
+        <img src="Image/workpic7.png" />
+        <img src="Image/workpic5.png" />
+        <img src="Image/workpic4.png" />
+        <img src="Image/workpic3.png" />
+        <img src="Image/workpic2.png" />
+        <img src="Image/workpic1.png" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <form class="contact-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" rows="6" required></textarea>
+        <button type="submit" id="submit-btn">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <h3>Thanawut</h3>
+      <p>Study to be a Game Devoloper</p>
+    </footer>
+  </body>
+</html>

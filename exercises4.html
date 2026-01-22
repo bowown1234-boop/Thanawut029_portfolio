@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercises4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h3 class="logo">Thanawut</h3>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="exercises.html"class="active">Exercises</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <br />
+    <br />
+    <div class="container">
+      <h1 class="title">Exercises4</h1>
+      <h3 class="titleh1">
+        สร้างโครงสร้างบทความเชิงความหมาย (Semantic Article Structure)
+      </h3>
+
+      <section id="about" class="about">
+        <div class="about-content">
+          <img src="Image/Picresult4.png" alt="" />
+          <div>
+            <p>
+              (โจทย์นี้จะให้คุณสร้างโครงสร้าง HTML สำหรับบทความบล็อก โดยใช้แท็ก
+              HTML5 เชิงความหมายที่เหมาะสม เพื่อปรับปรุงการเข้าถึง
+              (accessibility) และ SEO
+              การใช้แท็กที่ถูกต้องตามวัตถุประสงค์จะช่วยให้
+              เครื่องมือค้นหาและเทคโนโลยีช่วยเหลือเข้าใจเนื้อหาได้ดีขึ้น
+              คุณต้องสร้างหน้าเว็บที่มีส่วนหัว ส่วนเนื้อหาหลัก ส่วนเสริม
+              และส่วนท้าย โดยทุกส่วนต้องใช้แท็กที่สื่อความหมายอย่างชัดเจน
+              สิ่งที่โจทย์ต้องการ: โครงสร้างพื้นฐาน: ต้องมี doctype, แท็ก
+              &lt;html&gt;, &lt;head&gt;, และ &lt;body&gt; ที่ถูกต้อง
+              ส่วนหัวของหน้า (Header): ใช้แท็ก &lt;header&gt;
+              สำหรับส่วนหัวของเว็บไซต์ ภายใน &lt;header&gt; ต้องมีโลโก้เว็บไซต์
+              (ใช้ &lt;img&gt; พร้อม alt text ที่เหมาะสม) และเมนูนำทาง (ใช้
+              &lt;nav&gt; ที่มีลิสต์ลิงก์ &lt;ul&gt;&lt;li&gt;&lt;a&gt;)
+              เนื้อหาหลัก (Main Content): ใช้แท็ก &lt;main&gt;
+              สำหรับเนื้อหาหลักทั้งหมดของหน้า ภายใน &lt;main&gt; ต้องมีแท็ก
+              &lt;article&gt; เพื่อห่อหุ้มเนื้อหาบทความ ส่วนหัวของบทความ
+              (Article Header): ภายใน &lt;article&gt; ต้องมี &lt;header&gt;
+              ของบทความ (แยกจาก header หลักของเว็บไซต์) ภายใน &lt;header&gt;
+              ของบทความ ให้ใส่ ชื่อเรื่องบทความ (ใช้ &lt;h1&gt;), ชื่อผู้เขียน
+              (ใช้ &lt;address&gt; หรือ &lt;span&gt; ภายใน &lt;p&gt;),
+              และวันที่เผยแพร่ (ใช้ &lt;time&gt; พร้อม datetime attribute)
+              เนื้อหาบทความ: ใช้แท็ก &lt;section&gt; อย่างน้อย 2 ส่วน
+              เพื่อแบ่งเนื้อหาบทความออกเป็นส่วนย่อยๆ แต่ละ &lt;section&gt;
+              ควรมีหัวข้อ (ใช้ &lt;h2&gt;) และย่อหน้า (ใช้ &lt;p&gt;)
+              ต้องมีรูปภาพอย่างน้อย 1 รูป (ใช้ &lt;img&gt; พร้อม alt text
+              ที่เหมาะสม) ภายในเนื้อหาบทความ ส่วนเสริม (Aside): ใช้แท็ก
+              &lt;aside&gt; สำหรับข้อมูลที่เกี่ยวข้อง
+              แต่ไม่ได้เป็นส่วนหนึ่งของเนื้อหาบทความหลัก (เช่น
+              บทความที่เกี่ยวข้อง หรือโฆษณา) ภายใน &lt;aside&gt; ให้ใส่หัวข้อ
+              (ใช้ &lt;h3&gt;) และรายการลิงก์ (ใช้
+              &lt;ul&gt;&lt;li&gt;&lt;a&gt;) ส่วนท้ายของหน้า (Footer): ใช้แท็ก
+              &lt;footer&gt; สำหรับส่วนท้ายของเว็บไซต์ ภายใน &lt;footer&gt;
+              ต้องมีข้อมูลลิขสิทธิ์ (เช่น &amp;copy; 2023)
+              และลิงก์นโยบายความเป็นส่วนตัว (ใช้ &lt;a&gt;) )
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <a class="btn result" href="Resultexercises/Result4.html">ผลลัพธ์</a>
+        <button class="btn code">ดู Code</button>
+      </div>
+    </div>
+  </body>
+</html>

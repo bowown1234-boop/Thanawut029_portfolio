@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <h1>ฟอร์มสั่งซื้อสินค้า</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>ข้อมูลส่วนตัว</legend>
+
+      <label for="firstName">ชื่อ *</label><br>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="กรอกชื่อ"
+        required
+      ><br><br>
+
+      <label for="lastName">นามสกุล *</label><br>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="กรอกนามสกุล"
+        required
+      ><br><br>
+
+      <label for="email">อีเมล *</label><br>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@email.com"
+        required
+      ><br><br>
+
+      <label for="phone">เบอร์โทรศัพท์</label><br>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="0812345678"
+      >
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>ที่อยู่จัดส่ง</legend>
+
+      <label for="address">ที่อยู่ *</label><br>
+      <textarea
+        id="address"
+        name="address"
+        rows="3"
+        placeholder="บ้านเลขที่ ถนน แขวง/ตำบล"
+        required
+      ></textarea><br><br>
+
+      <label for="province">จังหวัด</label><br>
+      <input
+        type="text"
+        id="province"
+        name="province"
+        placeholder="เช่น กรุงเทพฯ"
+      ><br><br>
+
+      <label for="zipcode">รหัสไปรษณีย์ *</label><br>
+      <input
+        type="text"
+        id="zipcode"
+        name="zipcode"
+        minlength="5"
+        maxlength="5"
+        placeholder="10110"
+        required
+      >
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>รายการสินค้า</legend>
+
+      <label for="product">เลือกสินค้า *</label><br>
+      <select id="product" name="product" required>
+        <option value="">-- กรุณาเลือกสินค้า --</option>
+        <option value="shirt">เสื้อ</option>
+        <option value="pants">กางเกง</option>
+        <option value="shoes">รองเท้า</option>
+        <option value="hat">หมวก</option>
+      </select><br><br>
+
+      <label for="quantity">จำนวน *</label><br>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        required
+      ><br><br>
+
+      <p>บริการเสริม:</p>
+      <input type="checkbox" id="gift" name="extra" value="gift">
+      <label for="gift">ห่อของขวัญ</label><br>
+
+      <input type="checkbox" id="fast" name="extra" value="fast">
+      <label for="fast">จัดส่งด่วน</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>วิธีการชำระเงิน</legend>
+
+      <input
+        type="radio"
+        id="bank"
+        name="payment"
+        value="bank"
+        required
+      >
+      <label for="bank">โอนเงินผ่านธนาคาร</label><br>
+
+      <input type="radio" id="credit" name="payment" value="credit">
+      <label for="credit">บัตรเครดิต</label><br>
+
+      <input type="radio" id="cod" name="payment" value="cod">
+      <label for="cod">เก็บเงินปลายทาง</label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">ยืนยันการสั่งซื้อ</button>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercises6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h3 class="logo">Thanawut</h3>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="exercises.html"class="active">Exercises</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <br />
+    <br />
+    <div class="container">
+      <h1 class="title">Exercises6</h1>
+      <h3 class="titleh1">สร้างฟอร์มสั่งซื้อสินค้าพร้อมการตรวจสอบเบื้องต้น</h3>
+
+      <section id="about" class="about">
+        <div class="about-content">
+          <img src="Image/Picresult6.png" alt="" />
+          <div>
+            <p>
+              คุณได้รับมอบหมายให้สร้างฟอร์มสั่งซื้อสินค้าสำหรับร้านค้าออนไลน์
+              โดยฟอร์มนี้จะต้องรวบรวมข้อมูลจากลูกค้า เช่น ชื่อ-นามสกุล ที่อยู่
+              รายการสินค้าที่ต้องการสั่งซื้อ และวิธีการชำระเงิน คุณจะต้องใช้
+              HTML ในการสร้างโครงสร้างฟอร์ม
+              และเพิ่มคุณสมบัติการตรวจสอบข้อมูลเบื้องต้น (client-side
+              validation) เพื่อให้แน่ใจว่าลูกค้ากรอกข้อมูลสำคัญครบถ้วน
+              สิ่งที่โจทย์ต้องการ: สร้างฟอร์ม HTML ที่มีองค์ประกอบต่อไปนี้
+              ข้อมูลส่วนตัว: ช่องกรอก “ชื่อ” โดยใช้ text input และมี required
+              attribute ช่องกรอก “นามสกุล” โดยใช้ text input และมี required
+              attribute ช่องกรอก “อีเมล” โดยใช้ email input และมี required
+              attribute ช่องกรอก “เบอร์โทรศัพท์” โดยใช้ tel input ที่อยู่จัดส่ง:
+              ช่องกรอก “ที่อยู่” โดยใช้ &lt;textarea&gt; มี rows attribute และมี
+              required attribute ช่องกรอก “จังหวัด” โดยใช้ text input ช่องกรอก
+              “รหัสไปรษณีย์” โดยใช้ text input หรือ number input ต้องมี
+              maxlength และ minlength (กรณี text) หรือ min และ max (กรณี number)
+              และมี required attribute รายการสินค้าที่ต้องการ: ใช้
+              &lt;select&gt; element สำหรับเลือกสินค้าอย่างน้อย 3–4 รายการ เช่น
+              เสื้อ กางเกง รองเท้า และต้องมี required attribute ช่องกรอก “จำนวน”
+              โดยใช้ number input มี min="1" และมี required attribute โบนัส
+              (ไม่บังคับ): อาจใช้ checkbox สำหรับเลือกบริการเสริม หรือใช้ radio
+              สำหรับเลือกขนาดสินค้า วิธีการชำระเงิน: ใช้ radio buttons อย่างน้อย
+              3 ตัวเลือก เช่น โอนเงิน บัตรเครดิต เก็บเงินปลายทาง radio buttons
+              ทุกตัว ต้องใช้ name attribute เดียวกัน และต้องมี required
+              attribute ในตัวเลือกแรก การจัดกลุ่มข้อมูล: ใช้ &lt;fieldset&gt;
+              และ &lt;legend&gt; เพื่อจัดกลุ่มข้อมูลในฟอร์ม ตามหัวข้อหลัก เช่น
+              ข้อมูลส่วนตัว ที่อยู่จัดส่ง รายการสินค้า และวิธีการชำระเงิน
+              การเข้าถึง (Accessibility): เพิ่ม &lt;label&gt;
+              ให้กับทุกช่องกรอกข้อมูล และเชื่อมโยงกับ input โดยใช้ for และ id
+              attribute เพิ่ม placeholder attribute ให้กับช่องกรอกข้อมูลบางส่วน
+              เพื่อแสดงตัวอย่างการกรอกข้อมูล ฟอร์มต้องมีปุ่ม submit
+              เพื่อยืนยันการสั่งซื้อ
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <a class="btn result" href="Resultexercises/Result6.html">ผลลัพธ์</a>
+        <button class="btn code">ดู Code</button>
+      </div>
+    </div>
+  </body>
+</html>

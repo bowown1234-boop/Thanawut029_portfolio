@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercises9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h3 class="logo">Thanawut</h3>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="exercises.html" class="active">Exercises</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <br />
+    <br />
+    <div class="container">
+      <h1 class="title">Exerciseso9</h1>
+      <h3 class="titleh1">สร้างหน้าแสดงรายการสินค้าด้วย HTML เชิงความหมาย</h3>
+
+      <section id="about" class="about">
+        <div class="about-content">
+          <img src="Image/picresult9.png" alt="" />
+          <div>
+            <p>
+              คุณได้รับมอบหมายให้สร้างหน้าเว็บ สำหรับแสดงรายการสินค้าต่าง ๆ
+              ของร้านค้า โดยเน้นการใช้แท็ก HTML ที่มีความหมาย (Semantic HTML)
+              เพื่อให้โครงสร้างของหน้าเว็บมีความชัดเจน เข้าถึงง่าย และดีต่อ SEO
+              โดยไม่ต้องใช้ CSS ในขั้นตอนนี้ หน้าเว็บควรแสดงข้อมูลสินค้า
+              อย่างน้อย 3 ชิ้น สิ่งที่โจทย์ต้องการ: ส่วนหัวของหน้าเว็บ (Header):
+              สร้างส่วนหัวของหน้าเว็บ โดยใช้แท็ก &lt;header&gt;
+              ภายในต้องมีชื่อร้านค้า เช่น “ร้านค้าของฉัน” และเมนูนำทาง
+              (Navigation) อย่างน้อย 2 รายการ เช่น “หน้าแรก” และ “สินค้า”
+              เมนูนำทางต้องใช้แท็ก &lt;nav&gt; และ &lt;ul&gt;
+              ส่วนหลักของหน้าเว็บ (Main Content): สร้างส่วนหลักของหน้าเว็บ
+              โดยใช้แท็ก &lt;main&gt; ภายในส่วนหลัก:
+              ให้สร้างส่วนสำหรับแสดงรายการสินค้า โดยใช้แท็ก &lt;section&gt;
+              รายการสินค้า: ภายใน &lt;section&gt; ให้สร้างรายการสินค้า อย่างน้อย
+              3 ชิ้น โดยสินค้าแต่ละชิ้น ควรแยกออกจากกันอย่างชัดเจน สามารถใช้แท็ก
+              &lt;article&gt; หรือ &lt;div&gt; ที่เหมาะสม สำหรับสินค้าแต่ละชิ้น
+              องค์ประกอบของสินค้าแต่ละชิ้น: สินค้าแต่ละชิ้น
+              ต้องประกอบด้วยข้อมูลดังนี้ - รูปภาพสินค้า ใช้แท็ก &lt;img&gt;
+              และต้องมี alt attribute ที่เหมาะสม - ชื่อสินค้า ใช้แท็กส่วนหัว
+              เช่น &lt;h2&gt; หรือ &lt;h3&gt; - คำอธิบายสั้น ๆ ของสินค้า ใช้แท็ก
+              &lt;p&gt; - ราคาสินค้า - ปุ่ม “เพิ่มลงตะกร้า” ใช้แท็ก
+              &lt;button&gt; ส่วนท้ายของหน้าเว็บ (Footer):
+              สร้างส่วนท้ายของหน้าเว็บ โดยใช้แท็ก &lt;footer&gt;
+              ภายในอาจมีข้อมูลลิขสิทธิ์ หรือข้อมูลติดต่อ
+              แสดงอยู่ด้านล่างสุดของหน้า
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <a class="btn result" href="Resultexercises/Result9.html">ผลลัพธ์</a>
+        <button class="btn code">ดู Code</button>
+      </div>
+    </div>
+  </body>
+</html>

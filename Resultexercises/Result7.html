@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <h1>USER PROFILE</h1>
+    </header>
+
+    <main>
+      <section aria-labelledby="about-me">
+        <h2 id="about-me">เกี่ยวกับฉัน</h2>
+
+        <figure>
+          <img
+            src="../Image/myself1.jpg"
+            alt="รูปโปรไฟล์ของ Thanawut laokham"
+            width="150"
+          />
+          <figcaption>Profile Picture of Thanawut laokham</figcaption>
+        </figure>
+
+        <h3>Thanawut laokham</h3>
+        <p><strong>อาชีพ:</strong> Web Developer</p>
+        <p>
+          สนใจการพัฒนาเว็บไซต์ที่เข้าถึงง่าย (Accessible)
+          และเป็นมิตรกับผู้ใช้งาน
+        </p>
+      </section>
+
+      <section aria-labelledby="skills">
+        <h2 id="skills">ทักษะ</h2>
+
+        <ul>
+          <li>HTML (Semantic UI)</li>
+          <li>CSS (Flexbox & Grid)</li>
+          <li>JavaScript (React)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">ติดต่อฉัน</h2>
+
+        <p>
+          Email:
+          <a href="mailto:6740011029@psu.ac.th"> 6740011029@psu.ac.th </a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://www.facebook.com/thanawut.laokam"> facebook </a>
+        </p>
+      </section>
+
+      <section aria-labelledby="edit-profile">
+        <h2 id="edit-profile">แก้ไขโปรไฟล์</h2>
+
+        <form action="#" method="post">
+          <label for="name">ชื่อ</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="กรอกชื่อของคุณ"
+          /><br /><br />
+
+          <label for="email">อีเมล</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+          /><br /><br />
+
+          <label for="job">อาชีพ</label><br />
+          <input
+            type="text"
+            id="job"
+            name="job"
+            placeholder="Web Developer"
+          /><br /><br />
+
+          <label for="bio">ประวัติส่วนตัว</label><br />
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            placeholder="แนะนำตัวสั้น ๆ"
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Thanawut laokham</p>
+    </footer>
+  </body>
+</html>
