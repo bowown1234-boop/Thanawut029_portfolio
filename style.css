@@ -69,10 +69,11 @@ body {
   gap: 80px;
   padding: 0 60px;
   margin: auto;
+  margin-left: -100px;
  
 }
 .hero-right {
-  margin-right: 300px;
+  margin-right: 400px;
 }
 
 .hero-right h1 span {
