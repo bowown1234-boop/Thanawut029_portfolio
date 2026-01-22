@@ -62,39 +62,51 @@ body {
 }
 
 .hero {
+  margin-top: 30px;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 80px;       
   padding: 0 60px;
-  margin: auto;
-  margin-left: -100px;
- 
 }
+
 .hero-right {
-  margin-right: 400px;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-right h1 {
+  font-size: 56px;   
+  line-height: 1.2;
 }
 
 .hero-right h1 span {
   color: #ff960cd2;
 }
 
+
+.hero-right h3,
+.hero-right p {
+  font-size: 22px;
+}
+
 .hero-right button {
-  margin-top: 20px;
-  padding: 10px 25px;
+  margin-top: 30px;
+  padding: 16px 40px;   
+  font-size: 18px;
   background: #ff960cd2;
   border: none;
   color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .hero-img img {
-  width: 260px;
+  width: 380px;      
   border-radius: 50%;
   background: #ff960cd2;
-  padding: 5px;
+  padding: 8px;
 }
 
 section {
