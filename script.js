@@ -25,23 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-  // scroll
+  
   window.addEventListener("scroll", setActiveByScroll);
 
-  // click
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
       navLinks.forEach(l => l.classList.remove("active"));
       link.classList.add("active");
 
-      // ปิด hamburger หลังคลิก (มือถือ)
       if (menuToggle) {
         menuToggle.checked = false;
       }
     });
   });
 
-  // เรียกครั้งแรกตอนโหลดหน้า
   setActiveByScroll();
 });
